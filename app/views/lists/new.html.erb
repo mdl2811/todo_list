@@ -1,0 +1,14 @@
+<h1> Edit Post </h1>
+<hr />
+
+<%= form_for @list do |l| %>
+  <%= l.label :title %>
+  <%= l.text_field :title %>
+  <br />
+
+  <%= l.label :body %>
+  <%= l.text_field :body %>
+  <br />
+
+  <%= l.submit %>
+<% end %>
